@@ -1,0 +1,38 @@
+.container-fluid {
+    margin: 0;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.pad-0 {
+    padding: 0;
+}
+
+.header-bar-buttons {
+    height: 40px;
+    background-color: #163A9A;
+    color: #FFFFFF;
+    border: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+}
+
+.active-buttons:hover {
+    background-color: #FFFFFF;
+    color: #163A9A;
+    border-top-color: #163A9A;
+    box-shadow: 0px 15px 15px -1px #163A9A;
+}
+
+.active-buttons {
+    box-shadow: 0px 5px 10px -3px #888888;
+    border-bottom-color: #163A9A !important;
+}
+
+.inactive-buttons {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}

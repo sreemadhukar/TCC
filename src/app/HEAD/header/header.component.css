@@ -1,0 +1,56 @@
+.container-fluid {
+    margin: 0;
+    box-shadow: 0px 5px 10px -3px #888888;
+}
+
+.headerright,
+.headerleft {
+    min-height: 90px;
+    max-height: 90px;
+    background-color: #163A9A;
+}
+
+.header {
+    height: 90px;
+    background-color: #163A9A;
+    transition: height 1s;
+    overflow: hidden;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.header_logo {
+    border-radius: 55px;
+    float: left;
+    box-shadow: 0px 10px 50px -3px rgb(0, 0, 0);
+}
+
+.headername {
+    margin-left: 70px;
+    float: left;
+    font-size: 80px;
+    color: #FFFFFF;
+    line-height: 70px;
+}
+
+.headerbutton {
+    background-color: transparent;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    border-width: 1px;
+    color: #FFFFFF;
+    margin: 5px;
+    width: 90%;
+}
+
+.login:hover {
+    background-color: #FFFFFF;
+    color: #163A9A;
+    border-color: #163A9A;
+}
+
+.JB:hover {
+    background-color: #FFFFFF;
+    color: #163A9A;
+    border-color: #163A9A;
+}

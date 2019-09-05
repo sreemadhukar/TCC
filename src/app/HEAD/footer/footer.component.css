@@ -1,0 +1,13 @@
+.footer {
+    height: 20px;
+    position: relative;
+    bottom: 0;
+}
+
+.footermain {
+    border-top: dashed;
+    border-color: #163A9A;
+    border-width: 1px;
+    text-align: center;
+    color: #163A9A;
+}
