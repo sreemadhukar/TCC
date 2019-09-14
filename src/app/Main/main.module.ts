@@ -2,11 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainRoutingModule } from './/main-routing.module';
-import { HomeComponent } from '../HEAD/home/home.component'; 
+// import { HomeComponent } from '../HEAD/home/home.component'; 
 
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [],
   imports: [
     CommonModule,
     BrowserModule,
