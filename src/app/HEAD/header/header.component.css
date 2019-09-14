@@ -1,3 +1,4 @@
+
 .container-fluid {
     margin: 0;
     box-shadow: 0px 5px 10px -3px #888888;
@@ -5,15 +6,12 @@
 
 .headerright,
 .headerleft {
-    min-height: 90px;
-    max-height: 90px;
     background-color: #163A9A;
 }
 
 .header {
-    height: 90px;
-    background-color: #163A9A;
-    transition: height 1s;
+     flex: 1;
+  
     overflow: hidden;
     color: white;
     font-family: "Times New Roman", Times, serif;
@@ -53,4 +51,14 @@
     background-color: #FFFFFF;
     color: #163A9A;
     border-color: #163A9A;
+}
+
+
+.header-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #163A9A;
+    height:90px;
+    width: 100%;
 }

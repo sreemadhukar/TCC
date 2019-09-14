@@ -8,9 +8,9 @@ import { MainRoutingModule } from './Main/main-routing.module';
 
 import { HeaderComponent } from './HEAD/header/header.component';
 import { FooterComponent } from './HEAD/footer/footer.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './Auth/login/login.component';
 import { HeaderBarComponent } from './HEAD/header-bar/header-bar.component';
-import { JobRegistrationComponent } from './job-registration/job-registration.component';
+import { JobRegistrationComponent } from './Auth/job-registration/job-registration.component';
 
 
 @NgModule({
