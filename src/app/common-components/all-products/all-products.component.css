@@ -1,0 +1,37 @@
+.products {
+    background-color: #fdfdfdd5;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0;
+    padding-top: 2%;
+    height: 50%;
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+@media(max-width: 1120px) {
+    .img-div {
+        margin-top: 5% !important;
+    }
+}
+
+
+.img-div {
+    margin-top: 3%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+
+.img {
+    height: 60%;
+    width: 50%;
+}
+
+.lab {
+    position: relative;
+    top: 1%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+}

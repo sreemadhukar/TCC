@@ -8,9 +8,14 @@
 .pad-0 {
     padding: 0;
 }
-
-.header-bar-buttons {
+.header-bar{
+    display:flex;
+    justify-content: center;
+}
+    .header-bar-buttons {
     height: 40px;
+    flex-grow: 1;
+    text-align: center;
     background-color: #163A9A;
     color: #FFFFFF;
     border: solid;
@@ -19,6 +24,7 @@
     text-align: center;
     font-size: 20px;
 }
+
 
 .active-buttons:hover {
     background-color: #FFFFFF;

@@ -22,7 +22,7 @@ new Observable(observer =>{
 })
   }
   ngAfterViewInit(){
-    interval(10000)
+    interval(5000)
     .subscribe((val) => { 
     if( this.i == 0){
     $('#info').fadeTo(2000,0,function () {

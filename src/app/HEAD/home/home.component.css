@@ -10,72 +10,6 @@ body {
     height: 170vh;
 }
 
-@media (max-width: 576px) {
-    .home {
-        background-size: 100% 13% !important;
-        top: 0;
-        height: 280vh !important;
-    }
-    .products {
-        height: 80% !important;
-    }
-    .info {
-        height: 20% !important;
-    }
-    .about-us-div {
-        width: 75% !important;
-        top: 300px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .home {
-        background-size: 100% 55%;
-        height: 200vh;
-    }
-    .about-us-div {
-        width: 75% !important;
-        top: 300px !important;
-    }
-}
-
-@media(max-width: 1120px) {
-    .img-div {
-        margin-top: 5% !important;
-    }
-}
-
-.products {
-    background-color: #fdfdfdd5;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 0;
-    padding-top: 2%;
-    height: 50%;
-    text-align: center;
-    position: relative;
-    top: -100px;
-}
-
-.img-div {
-    margin-top: 3%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center
-}
-
-.img {
-    height: 60%;
-    width: 50%;
-}
-
-.lab {
-    position: relative;
-    top: 1%;
-    text-align: center;
-    font-weight: bold;
-    line-height: 20px;
-}
 
 .about-usi {
     overflow-wrap: break-word;
@@ -83,11 +17,7 @@ body {
     text-align: center;
 }
 
-.f-left {
-    float: left;
-}
 
-.tan {}
 
 .info-tab {
     width: 100%;

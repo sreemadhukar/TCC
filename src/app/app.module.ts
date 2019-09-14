@@ -11,6 +11,7 @@ import { FooterComponent } from './HEAD/footer/footer.component';
 import { LoginComponent } from './Auth/login/login.component';
 import { HeaderBarComponent } from './HEAD/header-bar/header-bar.component';
 import { JobRegistrationComponent } from './Auth/job-registration/job-registration.component';
+import { AllProductsComponent } from './common-components/all-products/all-products.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { JobRegistrationComponent } from './Auth/job-registration/job-registrati
     FooterComponent,
     LoginComponent,
     HeaderBarComponent,
-    JobRegistrationComponent
+    JobRegistrationComponent,
+    AllProductsComponent
   ],
   imports: [
     BrowserModule,
