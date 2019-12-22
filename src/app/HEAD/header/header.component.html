@@ -1,15 +1,15 @@
 <div class="container-fluid">
     <div class="header-div" id="row">
 
-        <div class="headerleft">
-            <a href=''> <img src="./assets/tcc-logo.png" id="header_logo" class="header_logo" /> </a>
-            <div class="headername">TCC</div>
+        <div class="headerleft" >
+            <a href='login'> <img src="./assets/tcc-logo.png" id="header_logo" class="header_logo" /> </a>
+            <div class="headername" (click)="test()">TCC</div>
         </div>
         <div class="header" id="header">
 
 
         </div>
-        <div class="headerright">
+        <div class="headerright" *ngIf="production">
             <a href="/jobregistration">
                 <button class="JB headerbutton" _ngcontent-c1="" ng-class="ab">Enquiry</button></a>
             <a href="/login"><button class="login headerbutton">login</button></a>

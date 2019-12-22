@@ -1,0 +1,128 @@
+
+*:focus {
+    outline: none;
+}
+::placeholder {
+    color: #163A9A;
+ }
+.login-page {
+    display:flex;
+    height:100%;
+    overflow: hidden;
+}
+.login-div
+{
+    min-height: 100vh;
+    overflow: hidden;
+    flex-basis: 40%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+ width: 100%;
+}
+ .login-logo {
+       padding-bottom: 50px;
+       padding-left: 3px;
+ }
+ .header_logo {
+     height:100px;
+     width:100px;
+     border-radius:100px;
+ }
+ .login-head {
+     font-family: Tahoma;
+     font-size: 20px;
+     font-weight: 600;
+     color: #163A9A;
+ }
+ .login-username {
+     margin-top:40px;
+ }
+ .login-password {
+    margin-bottom:40px;
+ }
+ .login-page-input {
+    width: 280px;
+    height: 40px;
+    border: solid 1px #163A9A;
+    border-radius: 5px;
+    margin:5px; 
+    color: #163A9A;
+    font-size: 15px;
+    padding-left:10px;
+ }
+
+ .login-page-button {
+    width: 160px;
+    height: 35px;
+ font-size: 15px;
+ font-weight: 600;
+ color:white;
+ background-color: #163A9A;
+ border:none;
+ border-radius: 5px;
+ cursor: pointer;
+ margin-bottom: 40px;
+ }
+ .login-submitbutton :hover {
+    color:#163A9A;
+    background-color: white ;
+    border:solid 1px #163A9A;
+}
+.login-page-google-button {
+    width: 290px;
+    height: 50px;
+    font-size: 15px;
+ font-weight: 600;
+ color:white;
+ background-color: #163A9A;
+ border:none;
+ border-radius: 5px;
+ cursor: pointer;
+ margin-bottom: 40px;
+}
+.login-google {
+    text-align: center;
+    width: 400px;
+    padding-top: 50px;
+    margin-bottom: 200px;
+    border-top: solid 1px #163A9A;
+}
+.login-google :hover  {
+    color:#163A9A;
+    background-color: white ;
+    border:solid 1px #163A9A;
+}
+ 
+
+.content-div
+{
+    flex-basis: 60%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #163A9A;
+}
+.icon-poles-div
+{    height: 430px;
+    overflow: hidden;
+}
+.icon-poles {
+    height : 400px;
+    width : 550px;
+
+    float: left;
+    transform: scale(-1,1);
+
+}
+.icon-trans-div {
+    height: 355px;
+    overflow: hidden;
+}
+.icon-trans {
+    float: right;
+    height: 400px;
+    width: 400px;
+}
+

@@ -7,11 +7,12 @@
 .headerright,
 .headerleft {
     background-color: #163A9A;
+ 
 }
 
 .header {
      flex: 1;
-  
+     /* background: linear-gradient(to right, #fc4a1a, #f7b733) !important; */
     overflow: hidden;
     color: white;
     font-family: "Times New Roman", Times, serif;

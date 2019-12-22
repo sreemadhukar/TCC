@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import * as d3 from 'd3'; 
+import { DomSanitizer } from '@angular/platform-browser';
+import { MatIconRegistry } from '@angular/material/icon';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
+import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
+import { Observable, of } from 'rxjs';
+
 // import { indiaMap} from '../assets/Jsons/India.json';
 
 @Component({
@@ -9,36 +14,41 @@ import * as d3 from 'd3';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+public test: any;
+ordersService: any;
+coffeeOrders: any;
+uid: any;
+  constructor(public Auth: AuthService ,iconRegistry: MatIconRegistry, sanitizer:DomSanitizer,private db:AngularFirestore, private router:Router) { 
 
-  constructor( private http: HttpClient) { }
+    iconRegistry.addSvgIcon('poles',sanitizer.bypassSecurityTrustResourceUrl('assets/test.svg'));
+    iconRegistry.addSvgIcon('trans',sanitizer.bypassSecurityTrustResourceUrl('assets/trans_logo.svg'));
+    
+    this.Auth.user.subscribe( value => this.test2(value));
+
+
+  }
 
   ngOnInit() {
-    this.map();
+    console.log('test');
+    this.Auth.getOrganizations().subscribe( data => {
+      console.log(data);  
+          }, err => {
+            console.log('error');
+            console.log(err.message);
+          });
   }
-  map()
-  {
-      console.log(this.http.get("src/assets/jsons/India.json"));
-    const svg = d3.select("#test")
-          .append("svg")
-          .style("cursor","move")
-          .attr("height","200px")
-          .attr("width","2000px")
-          .style("background-color","red");
-          // d3.queue()
-          // .defer(d3.json, "src/assets/jsons/India.json")
-          // .await(function (error , data){
-          //   if(error){
-          //     console.log("yo" + error);
-          //   } else{
-          //     this.drawmap(data);
-          //   }
-
-          // });
+  googleLogin(){
+    this.Auth.googleLogin().then(function() {
+     
+ 
+  });
+   
   }
 
-  drawmap(data){
-    console.log(data);
-            
+  test2(value: any) {
+    if(value) {
+      this.router.navigate(['/']);
+    }
   }
 
 }

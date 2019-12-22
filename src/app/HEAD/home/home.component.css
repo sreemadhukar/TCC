@@ -1,7 +1,4 @@
-body {    
-    margin: 0 !important;
-    padding: 0 !important;
-}
+
 .home {
     margin:0;
     margin-bottom: 3%;
@@ -41,7 +38,7 @@ body {
 
 .about-us-div {
     position: absolute;
-    top: 250px;
+    top: 500px;
     right: 0;
     color: #163A9A;
     width: 50%;

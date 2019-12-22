@@ -1,10 +1,10 @@
 <div class="container-fluid">
         <div class="header-bar">
-                <div class="header-bar-buttons inactive-buttons "></div>
-                <div class="header-bar-buttons active-buttons">Home</div>
-                <div class="header-bar-buttons active-buttons">Products</div>
-                <div class="header-bar-buttons active-buttons">Management</div>
-                <div class="header-bar-buttons active-buttons">Credibility</div>
+                <div class="header-bar-buttons inactive-buttons " ></div>
+                <div class="header-bar-buttons active-buttons" *ngIf="production">Home</div>
+                <div class="header-bar-buttons active-buttons"*ngIf="production">Products</div>
+                <div class="header-bar-buttons active-buttons" *ngIf="production">Management</div>
+                <div class="header-bar-buttons active-buttons" *ngIf="production">Credibility</div>
                 <div class="header-bar-buttons inactive-buttons"></div>
         </div>
 </div>
