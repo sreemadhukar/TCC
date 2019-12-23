@@ -22,7 +22,9 @@ import { JobRegistrationComponent } from './Auth/job-registration/job-registrati
 import { AllProductsComponent } from './common-components/all-products/all-products.component';
 import { IndiaMapComponent } from './common-components/india-map/india-map.component';
 import { environment } from './../environments/environment';
-import { InternalLeftNavBarComponent } from './common-components/internal-left-nav-bar/internal-left-nav-bar.component'
+import { InternalLeftNavBarComponent } from './common-components/internal-left-nav-bar/internal-left-nav-bar.component';
+import { InternalPoFormComponent } from './components/internal/internal-po-form/internal-po-form.component';
+import { InternalComponent } from './components/internal/internal/internal.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { InternalLeftNavBarComponent } from './common-components/internal-left-n
     JobRegistrationComponent,
     AllProductsComponent,
     IndiaMapComponent,
-    InternalLeftNavBarComponent
+    InternalLeftNavBarComponent,
+    InternalPoFormComponent,
+    InternalComponent
   ],
   imports: [
     BrowserModule,

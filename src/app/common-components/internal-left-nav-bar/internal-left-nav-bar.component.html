@@ -1,1 +1,15 @@
-<p>internal-left-nav-bar works!</p>
+<div class="internal-left-nav-bar">
+    <div class="internal-left-nav-bar-header">
+        Hi,
+        <div class="internal-left-nav-bar-header-name">Madhukar Thota</div>
+        <div class="internal-left-nav-bar-header-role">Technical Lead</div>
+    </div>
+    <div class="internal-left-nav-bar-body">
+            <div  [ngClass]="{'internal-left-nav-bar-list': !flags.mainBarPoSelected, 'internal-left-nav-bar-list-selected': flags.mainBarPoSelected}" (click)="mainBarPo()">
+                    <div  [ngClass]="{'internal-left-nav-bar-main-button': !flags.mainBarPoFormSelected, 'internal-left-nav-bar-main-button-selected': flags.mainBarPoFormSelected}"  >P.O</div>
+                <div class="internal-left-nav-bar-button">P.O Form</div>
+                <div class="internal-left-nav-bar-button">P.O's</div>
+            </div>
+            <div class="internal-left-nav-bar-finance-list" *ngIf="false">Technical Lead</div>
+    </div>
+</div>
